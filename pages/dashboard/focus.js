@@ -1,0 +1,6 @@
+// Dashboard: focus
+LV[4] = {s:()=>TT('포커스 보드')+'<div class="fb"><div class="c fh" id="fh"></div><div class="c"><div class="ch"><b>위험 순위</b><span>AI 위험도 기준</span></div><div class="sc" id="fr"></div></div></div>',
+u:()=>{const a=FL();if(!a.length)return;const [c,i]=a[0],u=cmax(c),s=st(u.igr),r=crisk(c);
+$('#fh').innerHTML=`<div class="fi" onclick="open_(${i})"><small>가장 주의가 필요한 고객 · AI 위험도 ${r}</small><h2>${c[0]}</h2><p>${c[1]} · ${c[2]} · PLCS ${c[3]}대</p><div class="fg"><div class="rw">${ring(u.igr,s,'12rem')}<div class="rv"><b class="mono cl${s}" style="font-size:2.6rem">${f(u.igr)}</b><small>mA</small></div></div><div class="fs">${[['전력',Math.round(ckw(c))+' kW'],['부하율',Math.round(ldc(c)*100)+'%'],['최대 유닛',u.n+' '+u.loc],['상태',SN[s]]].map(x=>`<div><small>${x[0]}</small><b>${x[1]}</b></div>`).join('')}</div></div></div><div class="cv" id="fc"></div>`;
+ch($('#fc'),{n:90,max:6,series:[{d:u.h,c:COL[s],fill:1}],lines:[{v:3,c:'#f0a92e'},{v:4,c:'#ef5b4f'}]});
+$('#fr').innerHTML=a.slice(1).map(([c,i],k)=>{const r=crisk(c);return`<div class="fr" onclick="open_(${i})"><span class="rk">${k+2}</span><div><b>${c[0]}</b><small>${c[2]} · 최대 ${f(cmax(c).igr)} mA</small>${bar(r,100,rsk(r))}</div><b class="mono cl${rsk(r)}">${r}</b></div>`}).join('')}};

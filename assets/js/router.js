@@ -1,0 +1,3 @@
+function open_(i){S.ci=i;S.page='det';S.tab=0;S.sel=0;S.qs=0;S.ai=null;render()}
+function render(){const m=$('#pg');document.documentElement.dataset.v=S.page=='list'?S.v:0;if(S.page=='list'){m.innerHTML=S.v?LV[S.v].s():dashboardPage();uList();return}
+const c=CU[S.ci];m.innerHTML=`${adm()?`<button class="back" onclick="S.page='list';render()">${ic('b')} 전체 고객 목록</button>`:''}<div class="ttl"><div><small>고객별 현황 · ${c[1]} · ${c[2]} · PLCS ${c[3]}대</small><h1>${c[0]}</h1></div><div class="hs" id="hs"></div></div><div class="tabs">${['실시간 누전현황','실시간 전력품질','전력 사용·부하','시계열 통계','월간·연간 리포트','AI 누전 예측'].map((t,i)=>`<button class="${i==S.tab?'on':''}" onclick="S.tab=${i};render()">${t}</button>`).join('')}</div><div id="tc" style="display:contents">${TB[S.tab].s()}</div>`;upd()}

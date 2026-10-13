@@ -1,0 +1,4 @@
+// Login sahifasi
+function loginPage() {
+  return `<button class="lo thb" style="position:fixed;top:14px;right:14px" onclick="tgl()"></button><div id="lg"><div class="c"><img src="${LOGO}"><h2>PLCS Monitor</h2><p>알에프디바이스(주) 누설전류 통합 관제</p><div class="in">${ic("u")}<input id="id" placeholder="아이디" autocomplete="username"></div><div class="in">${ic("l")}<input id="pw" type="password" placeholder="비밀번호" autocomplete="current-password" onkeydown="event.key=='Enter'&&login()"></div><div id="er" class="cl2" style="min-height:18px;font-size:12px"></div><button class="pb" onclick="login()">로그인</button><div class="dm"><button onclick="fill('admin')">관리자 계정 입력</button><button onclick="fill('customer')">고객 계정 입력</button></div><p style="font-size:11px">데모 계정 · 비밀번호 demo1234 · 샘플 데이터</p></div></div>`;
+}
