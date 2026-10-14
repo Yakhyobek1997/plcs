@@ -1,4 +1,4 @@
-const $=s=>document.querySelector(s),f=(x,d=2)=>(+x).toFixed(d),R=Math.random,cl=(x,a,b)=>Math.min(b,Math.max(a,x)),LOGO='assets/images/logo.png';
+const $=s=>document.querySelector(s),f=(x,d=2)=>(+x).toFixed(d),R=Math.random,cl=(x,a,b)=>Math.min(b,Math.max(a,x)),LOGO='assets/images/logo.png?v=5b2d946';
 const rg=a=>()=>{a|=0;a=a+0x6D2B79F5|0;let t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296};
 const IC={u:'<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>',l:'<rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/>',s:'<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>',mn:'<path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>',o:'<path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9"/>',b:'<path d="M19 12H5M12 19l-7-7 7-7"/>'};
 const ic=k=>`<svg class="i" viewBox="0 0 24 24">${IC[k]}</svg>`;
