@@ -9,7 +9,7 @@ body{background:var(--bg);color:var(--t);font:1rem/1.45 system-ui,"Noto Sans KR"
 button,input,select{font:inherit;color:inherit}button{cursor:pointer;background:none;border:0}
 svg.i{width:1.231rem;height:1.231rem;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;vertical-align:-0.231rem}
 #hd{height:4.154rem;flex:none;display:flex;align-items:center;gap:1.077rem;padding:0 1.231rem;background:var(--p2);border-bottom:1px solid var(--b)}
-#hd img{height:2.615rem}#hd .sp{flex:1}.dash{border:1px dashed var(--b);color:var(--m);padding:0.154rem 0.615rem;border-radius:0.308rem;font-size:0.846rem}
+#hd .brand{display:flex;align-items:center;gap:1.077rem;color:inherit;text-decoration:none}#hd img{height:2.615rem}#hd .sp{flex:1}.dash{border:1px dashed var(--b);color:var(--m);padding:0.154rem 0.615rem;border-radius:0.308rem;font-size:0.846rem}
 .live{display:flex;align-items:center;gap:0.462rem;color:var(--m)}.live:before{content:"";width:0.538rem;height:0.538rem;border-radius:50%;background:var(--ok)}
 .lo{color:var(--m);display:flex;gap:0.385rem;align-items:center;padding:0.462rem 0.769rem;border:1px solid var(--b);border-radius:0.462rem}.lo:hover{color:var(--t)}
 main{flex:1;min-height:0;overflow:auto;padding:1.077rem 1.231rem;display:flex;flex-direction:column;gap:0.923rem}
